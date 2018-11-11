@@ -213,8 +213,6 @@
   border-style: var(--border-style);
   border-color: var(--border-color);
 
-  outline: none;
-
   background: var(--background);
 
   line-height: 1;
@@ -244,6 +242,10 @@
 :host(.activated) .button-native {
   background: var(--background-activated);
   color: var(--color-activated);
+}
+
+.button:focus:not(:focus-visible) {
+  outline: none;
 }
 
 
